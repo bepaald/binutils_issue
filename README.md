@@ -65,7 +65,7 @@ With **2.43**, the program again balloons in size:
 
 Reverting the following commit fixes all issues: https://sourceware.org/git/?p=binutils-gdb.git;a=commitdiff;h=121a3f4b4f4;hp=b35013e29f3bcf9028aa22291f378010420322fe
 
-I've not rewound the entire source tree to before that commit, I've only undone the specific changes in that one commit (manually), skipping changes to the `texi` file. The full diff is pasted here for copmleteness:
+I've not rewound the entire source tree to before that commit, I've only undone the specific changes in that one commit (manually), skipping changes to the `.texi` file. The full diff is pasted here for completeness:
 
 ```diff
 diff -ru binutils-2.43_orig/binutils/objcopy.c binutils-2.43_edit/binutils/objcopy.c
