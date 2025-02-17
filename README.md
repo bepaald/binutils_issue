@@ -1,4 +1,4 @@
-Two `mingw-w64-openssl` packages, one built with binutils-**2.42** installed, the other with **2.43**. These builds were done back to back, the _only_ command run in between was to update binutils (`pacman -U mingw-w64-binutils-2.43-1-x86_64.pkg.tar.zst`). This was done on an (otherwise) up-to-date Arch Linux machine, and reproduced on another up-to-date Arch Linux machine.
+Two `mingw-w64-openssl` packages, one built with binutils-**2.42** installed, the other with **2.43**. These builds were done back to back, the _only_ command run in between was to update binutils (`pacman -U mingw-w64-binutils-2.43-1-x86_64.pkg.tar.zst`). The build process was simply to download the mingw-w64-openssl [PKGBUILD](https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=mingw-w64-openssl), save it in a directory and run `makepkg -rsc`. This was done on an (otherwise) up-to-date Arch Linux machine, and reproduced on another up-to-date Arch Linux machine.
 
 The files in the `/usr/x86_64-w64-mingw32/lib/` and `/usr/i686-w64-mingw32/lib/` directories are abnormally large in the package built with **2.43**. For example:
 
