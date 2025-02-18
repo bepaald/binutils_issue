@@ -35,7 +35,7 @@ int main()
   std::cout << "Done" << std::endl;
   return 0;
 }
-[~/programming/tests/openssl_tests] $ x86_64-w64-mingw32-g++ -Wall -Wextra -Woverloaded-virtual -Wshadow -c -pedantic -std=c++23 -D_WIN32_WINNT=0x600 -I/usr/x86_64-w64-mingw32/include/ -O3 -flto -o openssl_test.exe OPENSSL_AES_ENCRYPTION.cc
+[~/programming/tests/openssl_tests] $ x86_64-w64-mingw32-g++ -Wall -Wextra -Woverloaded-virtual -Wshadow -pedantic -std=c++23 -D_WIN32_WINNT=0x600 -I/usr/x86_64-w64-mingw32/include/ -O3 -flto -o openssl_test.exe OPENSSL_AES_ENCRYPTION.cc -lcrypto
 [~/programming/tests/openssl_tests] $
 ```
 
